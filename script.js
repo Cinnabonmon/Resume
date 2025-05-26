@@ -1,0 +1,1 @@
+const realTime = document.getElementById("real-time");
