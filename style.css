@@ -1,29 +1,65 @@
   body {
     margin: 0;
+    font-family: Arial;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
   }
 
+  /* Setup of the side-bar and aligning its contents. */
   .sidebar {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    width:20vh;
-    height: 100%
-    padding: 10px;
+    width:23%;
+    height: 100%;
+    padding: 20px;
     margin: 0;
-    background: linear-gradient(55deg, gray, white) 
+    background: linear-gradient(55deg, gray, white);
+    text-align: center;
+  }
+
+ /* Center the content of all lists in the sidebar */
+.sidebar ul {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  hr {
+    border: none;
+    border-top: solid 2px black;
+    margin: 10px 0;
+  } 
+
+  .sidebar hr {
+    width: 70%;
+    align-self: center;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: black;
   }
 
   img {
-    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
   }
   
   .main {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    position: absolute;
     width:50%;
     height: 100vh;
     padding: 0;
     margin: 0 40px;
+    font-size: .8rem
   }
+
+
 
 
